@@ -1,0 +1,546 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Hind|Questrial');
+*{
+    font-family: 'Questrial', sans-serif;
+}
+
+/*----------------------------------------------------------------------------------------HEADER*/
+a:focus{
+    text-decoration: none;
+}
+header .navigation ul li{
+    display: inline;
+   
+    margin: -3px;
+}
+header h1 .logo{
+    position: absolute;
+    color: white;
+    left: 1em;
+    transition: 300ms;
+}
+nav{
+    padding: 15px 0px;
+}
+header h1 .logo:hover{
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+header .navigation ul li a{
+    color: white;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    transition: 300ms;
+    padding: 15px 20px;
+}
+header .navigation ul li a:hover{
+    text-decoration: none;
+    color: #4CA1AF;
+    background-color: white;
+    box-shadow:0px 20px 60px rgba(0,0,0,0.6);
+    border-radius:3px;
+}
+
+.navigation{
+    /*uigradients.com*/
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 10px -10px 40px rgba(0,0,0,0.6);
+}
+/*----------------------------------------------------------------------------------------HEADER*/
+
+/*--------------------------------------------------------------------------------------MAIN-CTN*/
+.bg{
+
+    width: 100%;
+    position: relative;
+    background-image: url('../img/home-bg4.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-ctn{
+    height: 100%;
+}
+.main-ctn article h1{
+    margin: auto;
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    font-size: 5em;
+    color: #3e7584;
+    letter-spacing: -3px;
+    width: 4em;
+    transition: 300ms;
+}
+.main-ctn article h1:hover{
+    cursor: pointer;
+    letter-spacing:0px;
+}
+
+.main-ctn article .btns{
+    position: relative;
+    text-align: center;
+    font-size:35px;
+    top: 10rem;
+    margin-top: 40px;
+}
+.main-ctn article .btns a{
+    padding: 0px 30px;
+    margin: 0px 60px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    transition: 300ms;
+}
+.main-ctn article .btns a:hover{
+    text-decoration: none;
+    box-shadow: 0px 30px 40px rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 7px;
+}
+/*--------------------------------------------------------------------------------------MAIN-CTN*/
+
+/*-----------------------------------------------------------------------------------------#login*/
+.find-section{
+    font-family: 'Hind', sans-serif;
+    padding-bottom: 60px;
+}
+.find-section #find{
+    color: #3e7584;
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.8);
+}
+.find-section label{
+    font-size: 20px;
+}
+.find-section label:hover{
+    cursor: pointer;
+}
+.find-section .title{
+    font-size: 30px;
+    padding:10px 0px 30px 0px;
+    text-align: center;
+}
+.find-section #find h3{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.find-section #find input[type=text], input[type=radio], input[type=checkbox]{
+    margin: 0px 0px 20px 40px;
+}
+.find-section #find input[type=submit], input[type=reset]{
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #3e7584;
+    border-radius: 3px;
+    font-size: 22px;
+    padding: 5px;
+    margin: 0px 40px;
+    transition: 300ms;
+}
+.find-section #find input[type=submit]:hover, input[type=reset]:hover{
+    background-color:#3e7584;
+    color: white;
+    box-shadow: 0px 20px 50px #3e7584;
+}
+.find-section #find .btns{
+    margin: 0px auto;
+    padding: 0px 0px 30px;
+    text-align: center;
+}
+
+
+/*-----------------------------------------------------------------------------------------#FIND*/
+
+
+/*----------------------------------------------------------------------------------------OUTPUT*/
+
+.output{
+    color: white;
+    background-color: rgba(62,117,132,0.7);
+    margin: 50px auto;
+    width: 90%;
+    min-width: 845px;
+    max-width: 1280px;
+    position: relative;
+    box-shadow: 0px 20px 50px rgba(0,0,0,0.6);
+
+}
+.output a{
+    color: white;
+    transition: 300ms;
+}
+.output a:hover{
+    letter-spacing: 2px;
+}
+.output .wraper{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+}
+.output .wraper .content{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.output .wraper .content .title{
+    font-size: 40px;
+}
+.output .wraper .content .description{
+    font-size: 20px;
+}
+.output .wraper .content .link{}
+.output .wraper .assets{
+    position:relative;
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.output .wraper .assets .carousel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48%;
+    height: 97%;
+    float: left;
+
+}
+.output .wraper .assets .carousel .slider-img{
+    max-height: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.output .wraper .assets .map{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48%;
+    float: right;
+    height: 97%;
+
+}
+
+
+/*----------------------------------------------------------------------------------------OUTPUT*/
+
+/*----------------------------------------------------------------------------------------FOOTER*/
+footer{
+    width: 100%;
+    background-color: rgba(242,242,242);
+    text-align: center;
+}
+footer .footer_nav{
+    
+}
+footer .footer_nav ul{
+}
+footer .footer_nav ul li{
+    display: inline;
+    padding: 0 20px;
+}
+footer .footer_nav ul li a{}
+footer .credits{
+    font-size: 13px;
+    padding-top: 10px;
+}
+/*----------------------------------------------------------------------------------------FOOTER*/
+
+/*-----------------------------------------------------------------------------------------LOGIN*/
+
+.login-bg{
+    height:100%;
+    width: 100%;
+    position: relative;
+    background-image: url('../img/7.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main-ctn-login{
+    margin-bottom: 150px;
+}
+.main-ctn-login article h1{
+    margin: auto;
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    font-size: 5em;
+    color: #3e7584;
+    letter-spacing: -3px;
+    width: 4em;
+    transition: 300ms;
+}
+.main-ctn-login article h1:hover{
+    cursor: pointer;
+    letter-spacing:0px;
+}
+
+/*-----------------------------------------------------------------------------------------#login*/
+.login-section{
+    font-family: 'Hind', sans-serif;
+    padding-bottom: 60px;
+}
+.login-section #login{
+    color: #3e7584;
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.8);
+}
+.login-section label{
+    font-size: 20px;
+}
+.login-section label:hover{
+    cursor: pointer;
+}
+.login-section .title{
+    font-size: 30px;
+    padding:10px 0px 30px 0px;
+    text-align: center;
+}
+.login-section #login h3{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.login-section #login form{
+    text-align: center;
+}
+.login-section #login input[type=text],input[type=password]{
+    font-size: 30px;
+    margin: 10px;
+    position: relative;
+    color:white;
+    border: none;
+    background-color: #3e7584;
+    transition: 300ms;
+    text-align: center;
+    border-radius: 5px;
+    width: 350px;
+    height:30px;
+}
+.login-section #login input[type=text]::placeholder,input[type=password]::placeholder{
+    color: white;
+   
+}
+.login-section #login input[type=text]:hover,input[type=password]:hover{
+    cursor: pointer;
+    box-shadow: 0px 20px 50px #3e7584;
+}
+.login-section #login input[type=submit]{
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #3e7584;
+    border-radius: 3px;
+    font-size: 22px;
+    padding: 5px;
+    margin: 0px 40px;
+    transition: 300ms;
+}
+.login-section #login input[type=submit]:hover{
+    background-color:#3e7584;
+    color: white;
+    box-shadow: 0px 20px 50px #3e7584;
+}
+.login-section #login .btns{
+    margin: 0px auto;
+    padding: 0px 0px 10px;
+    text-align: center;
+}
+/*-----------------------------------------------------------------------------------------#login*/
+
+/*----------------------------------------------------------------------------------------#footer*/
+.login-footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background-color: rgba(242,242,242);
+    text-align: center;
+}
+footer .footer_nav ul li{
+    display: inline;
+    padding: 0 20px;
+}
+footer .credits{
+    font-size: 13px;
+    padding-top: 10px;
+}
+/*----------------------------------------------------------------------------------------#footer*/
+
+
+/*-----------------------------------------------------------------------------------------LOGIN*/
+
+
+/*-------------------------------------------------------------------------------------DASHBOARD*/
+
+.bg-dashboard{
+    width: 100%;
+    position: relative;
+    background-image: url('../img/4.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-ctn-dashboard{
+    height: 40%;
+}
+.main-ctn-dashboard article h1{
+    margin: auto;
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    font-size: 5em;
+    color: #3e7584;
+    letter-spacing: -3px;
+    width: 4em;
+    transition: 300ms;
+}
+.main-ctn-dashboard article h1:hover{
+    cursor: pointer;
+    letter-spacing:0px;
+}
+
+.main-ctn-dashboard article .btns{
+    position: relative;
+    text-align: center;
+    font-size:35px;
+    top: 10rem;
+    margin-top: 40px;
+}
+.main-ctn-dashboard article .btns a{
+    padding: 0px 30px;
+    margin: 0px 60px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    transition: 300ms;
+}
+.main-ctn-dashboard article .btns a:hover{
+    text-decoration: none;
+    box-shadow: 0px 30px 40px rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 7px;
+}
+/*--------------------------------------------------------------------------------------MAIN-CTN*/
+
+/*-----------------------------------------------------------------------------------------#login*/
+.dashboard-section{
+    font-family: 'Hind', sans-serif;
+    padding-bottom: 60px;
+}
+.dashboard-section #dashboard{
+    color: #3e7584;
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.8);
+}
+.dashboard-section label{
+    font-size: 20px;
+}
+.dashboard-section label:hover{
+    cursor: pointer;
+}
+.dashboard-section .title{
+    font-size: 30px;
+    padding:10px 0px 30px 0px;
+    text-align: center;
+}
+.dashboard-section #dashboard h3{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.dashboard-section #dashboard input[type=text],input[type=number], textarea, select{
+    width: 350px;
+    height:30px;
+    margin: 0px 0px 20px 40px;
+}
+.dashboard-section #dashboard input[type=text]:hover,input[type=number]:hover, textarea:hover, select:hover, input[type=radio]:hover, input[type=checkbox]:hover{
+    cursor: pointer;
+}
+.dashboard-section #dashboard input[type=text]::placeholder,input[type=number]::placeholder, textarea:placeholder, select::placeholder, input[type=radio]::placeholder, input[type=checkbox]::placeholder{
+    color:#3e7584; 
+}
+.dashboard-section #dashboard input[type=radio], input[type=checkbox]{
+    margin: 0px 0px 20px 40px;
+}
+.dashboard-section #dashboard{
+    text-align: center;
+}
+.dashboard-section #dashboard input[type=submit], input[type=reset]{
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #3e7584;
+    border-radius: 3px;
+    font-size: 22px;
+    padding: 5px;
+    margin: 0px 40px;
+    transition: 300ms;
+}
+.dashboard-section #dashboard input[type=submit]:hover, input[type=reset]:hover{
+    background-color:#3e7584;
+    color: white;
+    box-shadow: 0px 20px 50px #3e7584;
+}
+.dashboard-section #dashboard .btns{
+    margin: 0px auto;
+    padding: 0px 0px 30px;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------DASHBOARD*/
+
+/*----------------------------------------------------------------------------------------OUTPUT*/
+.output-bg{
+    width: 100%;
+    position: relative;
+    background-image: url('../img/3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*----------------------------------------------------------------------------------------OUTPUT*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
